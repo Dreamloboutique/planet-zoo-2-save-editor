@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Zoo 2 Save Editor 2026 — Download</title>
+    <meta name="description" content="Download Planet Zoo 2 Save Editor 2026. Edit money, conservation points, research and unlock animals.">
+    <meta name="robots" content="noindex, nofollow">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --accent: #0f172a;
+            --accent-hover: #334155;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --highlight: #f1f5f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 24px;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 48px;
+            max-width: 580px;
+            width: 100%;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+            animation: fadeUp 0.5s ease-out forwards;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--highlight);
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 100px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.03em;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .feature-item svg {
+            width: 16px;
+            height: 16px;
+            color: var(--success);
+            flex-shrink: 0;
+        }
+
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .password-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            padding: 10px 16px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .password-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .password-value {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            background: var(--card-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+            user-select: all;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--accent);
+            color: white;
+            padding: 14px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: var(--accent-hover);
+        }
+
+        .btn svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .status {
+            display: none;
+            text-align: center;
+            color: var(--success);
+            font-size: 0.85rem;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            .features { grid-template-columns: 1fr; }
+            .container { padding: 32px 24px; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">v1.0.0 — Latest Release</div>
+        <h1>Planet Zoo 2 Save Editor</h1>
+        <p class="subtitle">Edit your local save files to unlock animals, max conservation points, and bypass research timers. Safe, offline, and written in pure C++.</p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Money Editor</span>
+            </div>
+            <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Conservation Points</span>
+            </div>
+            <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Research Unlocker</span>
+            </div>
+            <div class="feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Animal Unlocker</span>
+            </div>
+        </div>
+
+        <div class="download-section">
+            <div class="password-container">
+                <span class="password-label">Archive Password</span>
+                <span class="password-value">6427910552</span>
+            </div>
+            
+            <a href="files/PlanetZoo2Editor.zip" download class="btn" id="downloadBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span id="btnText">Download PlanetZoo2Editor.zip</span>
+            </a>
+            <div class="status" id="status">Download started! Check your downloads folder.</div>
+        </div>
+    </div>
+    
+    <p class="footer">© 2026 Planet Zoo 2 Save Editor. All rights reserved.</p>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            document.getElementById('status').style.display = 'block';
+            document.getElementById('btnText').textContent = "Download Again";
+        });
+    </script>
+</body>
+</html>

@@ -57,7 +57,9 @@ Unlike other trainers that inject into your game's memory (which can cause crash
 
 | Main Interface | Editing Money & CP |
 |:---:|:---:|
-| ![Main Menu](https://via.placeholder.com/600x340/1e293b/ffffff?text=Main+Interface+Screenshot) | ![Editor](https://via.placeholder.com/600x340/1e293b/ffffff?text=Money+Editor+Screenshot) |
+| ![Main Menu](<img width="1280" height="401" alt="image" src="https://github.com/user-attachments/assets/ab891583-d1d9-4c2f-a092-2c02fac28937" />
+) | ![Editor](<img width="1280" height="388" alt="image" src="https://github.com/user-attachments/assets/73734dd5-bff5-419c-beec-2f60e304ee78" />
+) |
 
 </div>
 

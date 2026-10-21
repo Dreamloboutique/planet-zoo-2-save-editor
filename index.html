@@ -6,29 +6,32 @@
     <title>Planet Zoo 2 Save Editor 2026 — Download</title>
     <meta name="description" content="Download Planet Zoo 2 Save Editor 2026. Edit money, conservation points, research and unlock animals.">
     <meta name="robots" content="noindex, nofollow">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text-main: #0f172a;
-            --text-muted: #64748b;
-            --accent: #0f172a;
-            --accent-hover: #334155;
-            --border: #e2e8f0;
-            --success: #10b981;
-            --highlight: #f1f5f9;
+            --bg: #0f1713; /* Глубокий лесной зеленый */
+            --card-bg: rgba(22, 33, 28, 0.75);
+            --border: rgba(120, 180, 140, 0.15);
+            --accent: #65a30d; /* Яркий лаймовый/оливковый */
+            --accent-hover: #4d7c0f;
+            --text-main: #f0fdf4;
+            --text-muted: #86a38e;
+            --success: #34d399;
         }
 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Outfit', -apple-system, sans-serif;
         }
 
         body {
             background-color: var(--bg);
+            /* Градиентные пятна, имитирующие свет в джунглях */
+            background-image: 
+                radial-gradient(circle at 15% 20%, rgba(101, 163, 13, 0.12), transparent 30%),
+                radial-gradient(circle at 85% 80%, rgba(52, 211, 153, 0.08), transparent 35%);
             color: var(--text-main);
             display: flex;
             flex-direction: column;
@@ -36,56 +39,68 @@
             justify-content: center;
             min-height: 100vh;
             padding: 24px;
+            background-attachment: fixed;
         }
 
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(15px); }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
         }
 
         .container {
             background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--border);
-            border-radius: 16px;
+            border-radius: 20px;
             padding: 48px;
-            max-width: 580px;
+            max-width: 620px;
             width: 100%;
-            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
-            animation: fadeUp 0.5s ease-out forwards;
+            box-shadow: 0 24px 60px -12px rgba(0, 0, 0, 0.7);
+            animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
 
-        .badge {
-            display: inline-block;
-            background: var(--highlight);
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 10px;
-            border-radius: 100px;
-            margin-bottom: 16px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+        .header-icon {
+            width: 64px;
+            height: 64px;
+            background: rgba(101, 163, 13, 0.15);
+            border: 1px solid rgba(101, 163, 13, 0.3);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 32px;
         }
 
         h1 {
-            font-size: 2rem;
-            font-weight: 700;
+            font-size: 2.2rem;
+            font-weight: 800;
+            line-height: 1.2;
             margin-bottom: 12px;
-            letter-spacing: -0.03em;
-            color: var(--text-main);
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, #fff, #a3e635);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .subtitle {
             color: var(--text-muted);
             font-size: 1.05rem;
-            line-height: 1.6;
+            line-height: 1.5;
             margin-bottom: 32px;
+            font-weight: 300;
         }
 
         .features {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 12px;
+            gap: 16px;
             margin-bottom: 32px;
             padding-bottom: 32px;
             border-bottom: 1px solid var(--border);
@@ -94,16 +109,23 @@
         .feature-item {
             display: flex;
             align-items: center;
-            gap: 8px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            font-weight: 500;
+            gap: 10px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 400;
+            animation: slideUp 0.5s ease-out forwards;
+            opacity: 0;
         }
 
+        .feature-item:nth-child(1) { animation-delay: 0.1s; }
+        .feature-item:nth-child(2) { animation-delay: 0.15s; }
+        .feature-item:nth-child(3) { animation-delay: 0.2s; }
+        .feature-item:nth-child(4) { animation-delay: 0.25s; }
+
         .feature-item svg {
-            width: 16px;
-            height: 16px;
-            color: var(--success);
+            width: 18px;
+            height: 18px;
+            color: var(--accent);
             flex-shrink: 0;
         }
 
@@ -111,71 +133,78 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+            animation: slideUp 0.5s ease-out forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
         }
 
         .password-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            background: var(--bg);
+            background: rgba(0, 0, 0, 0.3);
             border: 1px solid var(--border);
-            padding: 10px 16px;
-            border-radius: 8px;
-            margin-bottom: 8px;
+            padding: 12px 16px;
+            border-radius: 10px;
         }
 
         .password-label {
             font-size: 0.85rem;
             color: var(--text-muted);
-            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
         }
 
         .password-value {
             font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-            font-size: 0.95rem;
+            font-size: 1rem;
             font-weight: 600;
-            color: var(--text-main);
-            background: var(--card-bg);
-            padding: 2px 8px;
-            border-radius: 4px;
-            border: 1px solid var(--border);
+            color: var(--accent);
+            background: rgba(101, 163, 13, 0.1);
+            padding: 4px 12px;
+            border-radius: 6px;
             user-select: all;
+            cursor: copy;
         }
 
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
             background: var(--accent);
             color: white;
-            padding: 14px 24px;
-            border-radius: 8px;
+            padding: 16px 24px;
+            border-radius: 10px;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 1rem;
+            font-weight: 600;
+            font-size: 1.05rem;
             transition: all 0.2s ease;
             cursor: pointer;
             border: none;
             width: 100%;
+            box-shadow: 0 4px 14px rgba(101, 163, 13, 0.3);
         }
 
         .btn:hover {
             background: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(101, 163, 13, 0.4);
         }
 
         .btn svg {
-            width: 18px;
-            height: 18px;
+            width: 20px;
+            height: 20px;
         }
 
         .status {
             display: none;
             text-align: center;
             color: var(--success);
-            font-size: 0.85rem;
-            margin-top: 4px;
-            font-weight: 500;
+            font-size: 0.9rem;
+            margin-top: 8px;
+            font-weight: 600;
         }
 
         .footer {
@@ -183,20 +212,23 @@
             font-size: 0.8rem;
             color: var(--text-muted);
             text-align: center;
+            animation: slideUp 0.5s ease-out forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
         }
 
         @media (max-width: 500px) {
             .features { grid-template-columns: 1fr; }
             .container { padding: 32px 24px; }
-            h1 { font-size: 1.6rem; }
+            h1 { font-size: 1.8rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="badge">v1.0.0 — Latest Release</div>
+        <div class="header-icon">🦁</div>
         <h1>Planet Zoo 2 Save Editor</h1>
-        <p class="subtitle">Edit your local save files to unlock animals, max conservation points, and bypass research timers. Safe, offline, and written in pure C++.</p>
+        <p class="subtitle">Unlock every animal, max out your conservation points, and bypass the research grind. Safe, offline, and built in pure C++.</p>
         
         <div class="features">
             <div class="feature-item">
@@ -220,18 +252,18 @@
         <div class="download-section">
             <div class="password-container">
                 <span class="password-label">Archive Password</span>
-                <span class="password-value">6427910552</span>
+                <span class="password-value" title="Click to copy">6427910552</span>
             </div>
             
             <a href="files/PlanetZoo2Editor.zip" download class="btn" id="downloadBtn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                <span id="btnText">Download PlanetZoo2Editor.zip</span>
+                <span id="btnText">Download Editor (v1.0.0)</span>
             </a>
             <div class="status" id="status">Download started! Check your downloads folder.</div>
         </div>
     </div>
     
-    <p class="footer">© 2026 Planet Zoo 2 Save Editor. All rights reserved.</p>
+    <p class="footer">© 2026 Planet Zoo 2 Save Editor. For offline use only.</p>
 
     <script>
         document.getElementById('downloadBtn').addEventListener('click', function() {

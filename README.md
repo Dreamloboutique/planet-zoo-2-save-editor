@@ -57,8 +57,8 @@ Unlike other trainers that inject into your game's memory (which can cause crash
 
 | Main Interface | 
 |:---:|
-| ![Main Menu]<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/923864f6-a278-49f6-8117-c9579e4dc2b3" />
-)
+<img width="1280" height="720" alt="image" src="https://github.com/user-attachments/assets/923864f6-a278-49f6-8117-c9579e4dc2b3" />
+
 </div>
 
 *(Replace these placeholder images with real screenshots of your app before uploading).*
